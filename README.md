@@ -7,46 +7,46 @@ I also maintain a blog at [tomerhanochi.com](https://tomerhanochi.com/blog), and
 <a href="https://github.com/tomerhanochi/libsubid">
   <picture>
     <source
-      srcset="https://github-readme-stats.vercel.app/api/pin/?username=tomerhanochi&repo=libsubid"
+      srcset="./profile/pin-libsubid.svg"
       media="(prefers-color-scheme: light)"
     />
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=tomerhanochi&repo=libsubid&theme=dark" />
+    <img src="./profile/pin-libsubid-dark.svg" />
   </picture>
 </a>
 <a href="https://github.com/tomerhanochi/homelab">
   <picture>
     <source
-      srcset="https://github-readme-stats.vercel.app/api/pin/?username=tomerhanochi&repo=homelab"
+      srcset="./profile/pin-homelab.svg"
       media="(prefers-color-scheme: light)"
     />
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=tomerhanochi&repo=homelab&theme=dark" />
+    <img src="./profile/pin-homelab-dark.svg" />
   </picture>
 </a>
 <br/>
 <a href="https://github.com/tomerhanochi/pytris">
   <picture>
     <source
-      srcset="https://github-readme-stats.vercel.app/api/pin/?username=tomerhanochi&repo=pytris"
+      srcset="./profile/pin-pytris.svg"
       media="(prefers-color-scheme: light)"
     />
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=tomerhanochi&repo=pytris&theme=dark" />
+    <img src="./profile/pin-pytris-dark.svg" />
   </picture>
 </a>
 <a href="https://github.com/tomerhanochi/website">
   <picture>
     <source
-      srcset="https://github-readme-stats.vercel.app/api/pin/?username=tomerhanochi&repo=website"
+      srcset="./profile/pin-website.svg"
       media="(prefers-color-scheme: light)"
     />
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=tomerhanochi&repo=website&theme=dark" />
+    <img src="./profile/pin-website-dark.svg" />
   </picture>
 </a>
 
 # Languages
 <picture>
   <source
-    srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=tomerhanochi&hide=typst&layout=compact&show_icons=true"
+    srcset="./profile/top-langs.svg"
     media="(prefers-color-scheme: light)"
   />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tomerhanochi&hide=typst&layout=compact&show_icons=true&theme=dark" />
+  <img src="./profile/top-langs-dark.svg" />
 </picture>

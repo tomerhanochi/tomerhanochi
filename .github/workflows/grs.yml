@@ -1,0 +1,104 @@
+name: Update README cards
+
+on:
+  schedule:
+    - cron: "0 3 * * 0"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Generate top languages card (light)
+        uses: readme-tools/github-readme-stats-action@d82657a0e215a28ec48bfc9b3987999a279f93be # v1.2.0
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&hide=typst&layout=compact&show_icons=true
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card (dark)
+        uses: readme-tools/github-readme-stats-action@d82657a0e215a28ec48bfc9b3987999a279f93be # v1.2.0
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&hide=typst&layout=compact&show_icons=true&theme=dark
+          path: profile/top-langs-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card libsubid (light)
+        uses: readme-tools/github-readme-stats-action@d82657a0e215a28ec48bfc9b3987999a279f93be # v1.2.0
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=libsubid
+          path: profile/pin-libsubid.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card libsubid (dark)
+        uses: readme-tools/github-readme-stats-action@d82657a0e215a28ec48bfc9b3987999a279f93be # v1.2.0
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=libsubid&theme=dark
+          path: profile/pin-libsubid-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card homelab (light)
+        uses: readme-tools/github-readme-stats-action@d82657a0e215a28ec48bfc9b3987999a279f93be # v1.2.0
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=homelab
+          path: profile/pin-homelab.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card homelab (dark)
+        uses: readme-tools/github-readme-stats-action@d82657a0e215a28ec48bfc9b3987999a279f93be # v1.2.0
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=homelab&theme=dark
+          path: profile/pin-homelab-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card pytris (light)
+        uses: readme-tools/github-readme-stats-action@d82657a0e215a28ec48bfc9b3987999a279f93be # v1.2.0
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=pytris
+          path: profile/pin-pytris.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card pytris (dark)
+        uses: readme-tools/github-readme-stats-action@d82657a0e215a28ec48bfc9b3987999a279f93be # v1.2.0
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=pytris&theme=dark
+          path: profile/pin-pytris-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card website (light)
+        uses: readme-tools/github-readme-stats-action@d82657a0e215a28ec48bfc9b3987999a279f93be # v1.2.0
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=website
+          path: profile/pin-website.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate pin card website (dark)
+        uses: readme-tools/github-readme-stats-action@d82657a0e215a28ec48bfc9b3987999a279f93be # v1.2.0
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=website&theme=dark
+          path: profile/pin-website-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "Update README cards" || exit 0
+          git push
