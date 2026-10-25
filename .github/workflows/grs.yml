@@ -69,21 +69,21 @@ jobs:
           fail_on_error: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate pin card pytris (light)
+      - name: Generate pin card services (light)
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: pin
-          options: repo=pytris
-          path: profile/pin-pytris.svg
+          options: repo=services
+          path: profile/pin-services.svg
           fail_on_error: true
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Generate pin card pytris (dark)
+      - name: Generate pin card services (dark)
         uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
         with:
           card: pin
-          options: repo=pytris&theme=dark
-          path: profile/pin-pytris-dark.svg
+          options: repo=services&theme=dark
+          path: profile/pin-services-dark.svg
           fail_on_error: true
           token: ${{ secrets.GITHUB_TOKEN }}
 

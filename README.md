@@ -4,6 +4,15 @@ My name is Tomer Hanochi, and I’m a passionate Software Engineer. I love divin
 I also maintain a blog at [tomerhanochi.com](https://tomerhanochi.com/blog), and you can contact me through [contact@tomerhanochi.com](mailto://contact@tomerhanochi.com).
 
 # Projects
+<a href="https://github.com/tomerhanochi/services">
+  <picture>
+    <source
+      srcset="./profile/pin-services.svg"
+      media="(prefers-color-scheme: light)"
+    />
+    <img src="./profile/pin-services-dark.svg" />
+  </picture>
+</a>
 <a href="https://github.com/tomerhanochi/libsubid">
   <picture>
     <source
@@ -13,6 +22,7 @@ I also maintain a blog at [tomerhanochi.com](https://tomerhanochi.com/blog), and
     <img src="./profile/pin-libsubid-dark.svg" />
   </picture>
 </a>
+<br/>
 <a href="https://github.com/tomerhanochi/homelab">
   <picture>
     <source
@@ -20,16 +30,6 @@ I also maintain a blog at [tomerhanochi.com](https://tomerhanochi.com/blog), and
       media="(prefers-color-scheme: light)"
     />
     <img src="./profile/pin-homelab-dark.svg" />
-  </picture>
-</a>
-<br/>
-<a href="https://github.com/tomerhanochi/pytris">
-  <picture>
-    <source
-      srcset="./profile/pin-pytris.svg"
-      media="(prefers-color-scheme: light)"
-    />
-    <img src="./profile/pin-pytris-dark.svg" />
   </picture>
 </a>
 <a href="https://github.com/tomerhanochi/website">
